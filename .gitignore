@@ -254,3 +254,10 @@ paket-files/
 src/Sample.Web.Mvc/secrets.json
 src/Sample.Web.Host/secrets.json
 src/Sample.Migrator/secrets.json
+*.rdp
+/src/Sample.Web.Host/appsettings.json
+/src/Sample.Migrator/appsettings.json
+/src/Sample.Web.Host/App_Data/Logs/Logs.txt
+*.pem
+/ubuntu@ec2-52-194-236-215.ap-northeast-1.compute.amazonaws.com
+*.ppk

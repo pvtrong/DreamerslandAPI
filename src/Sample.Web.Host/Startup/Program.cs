@@ -16,7 +16,8 @@ namespace Sample.Web.Host.Startup
             Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .UseUrls("http://*:44312");
                 })
                 .UseCastleWindsor(IocManager.Instance.IocContainer);
     }
