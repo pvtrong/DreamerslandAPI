@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sample.web.host:
+    image: ${DOCKER_REGISTRY-}samplewebhost
+    build:
+      context: .
+      dockerfile: src/Sample.Web.Host/Dockerfile
